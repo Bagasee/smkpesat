@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+
+            <title>Dashboard Admin</title>
+            <link rel="icon" type="image/x-icon" href="img/img3.png" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+                  type="text/css" />
+            <link href=".../css/main2_1.css" rel="stylesheet" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+            <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+            </meta>
+            </link>
+        </h:head>
+
+        <h:body>
+
+            <!--START KODING-->
+
+            <header class="fixed">
+                <nav class="topnav">
+                    <div class="logo"><img src=".../img/img1.png" alt="logo" /></div>
+                    <div class="menu" id="myTopnav">
+                        <a href="login.xhtml" onclick="return confirm('Anda Yakin Ingin Keluar?');">Logout</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <div class="clearfix"></div>
+            <br />
+
+            <div class="header-title">
+                <h1>Dashboard</h1>
+                <p>Admin</p>
+            </div>
+
+            <div class="content">
+                <div class="dashboard-box">
+                    <div class="box">
+                        <a href="index.xhtml"> <i class="material-icons" style="font-size: 50px">&#xe88a;</i> </a>
+                    </div>
+                    <div class="name">Website Sekolah</div>
+                </div>
+                <div class="dashboard-box">
+                    <div class="box">
+                        <a href="regis.xhtml"> <i class="material-icons" style="font-size: 50px">&#xe7ef;</i></a>
+                    </div>
+                    <div class="name">Pendaftaran</div>
+                </div>
+                <div class="dashboard-box">
+                    <div class="box">
+                        <a href="show.xhtml"> <i class="material-icons" style="font-size: 50px">&#xe7ef;</i></a>
+                    </div>
+                    <div class="name">Data Calon Siswa</div>
+                </div>
+            </div>
+            
+            <!--END KODING-->
+        </h:body>
+
+    </f:view>
+
+
+
+
+</html>
+

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+            <!-- font awesome -->
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+                integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+                />
+            <link rel="icon" type="image/x-icon" href="img/img3.png" />
+            <link rel="stylesheet" href="css/main3.css" />
+            <title>Halaman Login</title>
+
+        </h:head>
+
+        <h:body>
+
+            <!--START KODING-->
+            <header class="fixed">
+                <nav class="topnav">
+                    <div class="logo"><img src="img/img1.png" alt="logo" /></div>
+                    <div class="menu" id="myTopnav">
+                        <a href="index.xhtml">Beranda</a>
+                        <a href="index.xhtml#tentangkami">Tentang Kami</a>
+                        <a href="index.xhtml#major">Program Keahlian</a>
+                        <a href="index.xhtml#gallery">Galeri</a>
+                        <a href="index.xhtml#contact">Kontak Kami</a>
+                        <a href="regis.xhtml">Pendaftaran</a>
+                        <a href="login.xhtml">Login</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+
+            <section id="home">
+                <div class="container">
+                    <div class="header-home">
+                        <div class="regis-form">
+                            <h1>LOGIN</h1>
+                            <h:form id="form">
+                                <div class="form-group">
+                                    <h:panelGrid class="label" columns="2">
+                                        Username : <h:inputText class="input" value="#{admin.username}"/>
+                                        Password : <h:inputSecret class="input" value="#{admin.password}"/>
+                                    </h:panelGrid>
+                                        <div class="btn-primary">
+                                            <a href="index.xhtml">Kembali</a>
+                                            <h:commandButton class="button" value="Login" action="#{admin.validatelogin}"/>
+                                        </div>
+                                </div>
+                                <h2>Login Gagal ! Username / Password Anda Salah</h2>
+                            </h:form> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--END KODING-->
+            <footer>
+                <div class="footer">
+                    <p>Copyright &copy; Project 1 - Group 4 (2023)</p>
+                </div>
+            </footer>
+        </h:body>
+
+    </f:view>
+
+
+
+
+</html>
